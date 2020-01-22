@@ -45,11 +45,6 @@ for i = 1 : length(netlist{1})
             n2 = str2double(netlist{3}{i});
             val = str2double(spicerep(netlist{4}{i}));
             vol(n1, n2, val);
-        case{'I','i'}
-            n1 = str2double(netlist{2}{i});
-            n2 = str2double(netlist{3}{i});
-            val = str2double(spicerep(netlist{4}{i}));
-            cur(n1, n2, val);
         case{'E','e'}
             k = str2double(netlist{2}{i});
             kp = str2double(netlist{3}{i});
