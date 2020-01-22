@@ -28,3 +28,4 @@ The netlist file is similar to Hspice, but there are some minor differences:
 ```
 .    <min-frequency>    <max-frequency>    <input-node>    <output-node>
 ```
+![help](docs/help.gif)

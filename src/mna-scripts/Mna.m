@@ -51,14 +51,14 @@ for i = 1 : length(netlist{1})
             j = str2double(netlist{4}{i});
             jp = str2double(netlist{5}{i});
             t = str2double(spicerep(netlist{6}{i}));
-            VCVS(k, kp, j, jp, t);
+            vcvs(k, kp, j, jp, t);
         case{'G','g'}
             k = str2double(netlist{2}{i});
             kp = str2double(netlist{3}{i});
             j = str2double(netlist{4}{i});
             jp = str2double(netlist{5}{i});
             t = str2double(spicerep(netlist{6}{i}));
-            VCCS(k, kp, j, jp, t);
+            vccs(k, kp, j, jp, t);
         case{'.'}
             fstart = str2double(spicerep(netlist{2}{i}));
             fend = str2double(spicerep(netlist{3}{i}));

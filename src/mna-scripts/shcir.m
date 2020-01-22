@@ -1,4 +1,4 @@
-function sh_cir(n1,n2)
+function shcir(n1,n2)
 
 global G C b
 

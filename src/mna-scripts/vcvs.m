@@ -1,4 +1,4 @@
-function VCVS(k, kp, j, jp, A)
+function vcvs(k, kp, j, jp, A)
 
 global G C b
 

@@ -1,4 +1,4 @@
-function VCCS(k, kp, j, jp, gm)
+function vccs(k, kp, j, jp, gm)
 
 global G
 
