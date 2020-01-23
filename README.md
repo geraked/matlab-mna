@@ -1,15 +1,22 @@
+![catalog](docs/catalog.jpg)
+
 # MATLAB MNA
-Modified Nodal Analysis using MATLAB
+
+Modified Nodal Analysis by using MATLAB
 
 This program gets an electrical circuit netlist like HSPICE and gives you the Bode (Frequency Response) Plot using Modified Nodal Analysis in MATLAB.
 
 ## Getting Started
 
-To run the program, first open Matlab and add to path the **`matlab-mna`** folder and its subfolders.
+To run the program, first open MATLAB and add to path the **`src`** folder and its subfolders.
 
 Open **`Main.m`** and assign your netlist file name to the **`file`** variable.
 
-The netlist file is similar to Hspice, but there are some minor differences:
+![help](docs/help.gif)
+
+### Tips
+
+The netlist file is similar to HSPICE, but there are some minor differences:
 *	Don’t write **`ac`** for independent voltage sources. (Only **ac** independent voltage sources are supported by this program, so there is no need to mention.)
 *	Also don’t mention **`ac`** for the method of analysis.
 *	You must determine the **input** and **output** **nodes** of the circuit for computing the frequency response.
@@ -28,4 +35,23 @@ The netlist file is similar to Hspice, but there are some minor differences:
 ```
 .    <min-frequency>    <max-frequency>    <input-node>    <output-node>
 ```
-![help](docs/help.gif)
+
+## Netlist Example
+
+<img align="right" width="300" src="src/examples/Example-1.png">
+
+```text
+***Example-1
+
+Vin	1	0	1
+R1	1   	2	10k
+C1	2	0	100u
+
+.	0.01	100	1	2
+```
+
+## Author
+**Rabist** - view on [LinkedIn](https://www.linkedin.com/in/rabist)
+
+## License
+Licensed under [MIT](LICENSE).
