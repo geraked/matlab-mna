@@ -53,5 +53,11 @@ C1	2	0	100u
 ## Author
 **Rabist** - view on [LinkedIn](https://www.linkedin.com/in/rabist)
 
+## Details
+- **Course:** Electrical Circuits - Undergraduate
+- **Teacher:** [Dr. Sayed Alireza Sadrossadat](https://yazd.ac.ir/en/people/sadr)
+- **Univ:** Yazd University
+- **Semester:** Fall 1398
+
 ## License
 Licensed under [MIT](LICENSE).
